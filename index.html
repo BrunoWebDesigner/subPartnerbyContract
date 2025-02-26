@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract and Sites Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>List of Sub Partners by Contract</h1>
+    <h2>My Last Contribution to my Beautiful TO Coworkers</h2>
+    <input type="file" id="contractsFile" accept=".json">
+    <input type="file" id="sitesFile" accept=".json">
+    <button onclick="generateTable()">Generate Table</button>
+    <button onclick="exportToCSV()">Export to CSV</button>
+    <div class="loading" id="loading">Generating Table...</div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Contract Name</th>
+                <th>Operator Title</th>
+                <th>Sub Partner</th>
+                <th>Sub Partner Type</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
